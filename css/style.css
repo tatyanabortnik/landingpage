@@ -1,0 +1,306 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*-------------------------------------------*/
+body{
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #fff;
+  font-family: verdana;
+  /*padding: 0 120px;*/
+}
+
+.main-title {
+  font-family: 'Arapey';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 66px;
+  color: #9DB0D1;
+  text-align: center;
+  margin: 100px 0 50px 0;
+}
+
+header {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.dscr{
+  font-family: verdana;
+  color: #000;
+  font-size: 20px;
+  }
+
+header .dscr{
+  margin: 0 200px 50px;
+  text-align: center;
+}
+.btn{
+  padding: 24px 50px;
+  border: 0;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-family: Arapey;
+  font-size: 30px;
+  display: block;
+
+  transition: all .3s;
+   position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.orange.btn{
+  background-color: #ebac87;
+  color: #fff;
+}
+
+.white.btn{
+  background-color: #fff;
+  color: #ebac87;
+
+}
+
+.orange.btn:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ebac87;
+    border-radius: 10px;
+    z-index: -2;
+    }
+
+    .btn:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.1);
+    transition: all .3s;
+    border-radius: 10px;
+    z-index: -1;
+  }
+  .btn:hover {
+    color: #000;
+  }
+    .btn:hover:before {
+      width: 100%;
+    }
+  
+
+header .btn{
+  margin: 0 auto 50px;
+}
+.list{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.list li{
+  display: flex;
+  align-items: center;
+}
+.bullet{
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.list .bullet{
+  background-color: #9db0d1;
+}
+
+.list .bullet-txt{
+  margin: 0 0 0 15px;
+}
+
+.caption{
+  margin-bottom: 50px;
+}
+
+.features-info{
+  background: url(../img/bg-cloud.png) repeat-x top / auto 200px
+              ,url("../img/snowy-mount.png") no-repeat bottom right 120px / auto 475px
+              ,linear-gradient(to bottom, rgba(135, 198, 235, 0), #87c6eb)
+              ;
+  padding: 250px 120px 50px;
+  
+  
+}
+.features-info .caption{
+  text-align: center;
+}
+.caption{
+  font-family: Arapey;
+  font-size: 40px;
+  
+}
+
+.features{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.feature{
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 350px;
+  padding: 20px;
+}
+
+
+  
+.feature .bullet{
+  background-color: rgba(235, 172, 135, 0.4);
+  color: #fff;
+  font-size: 30px;
+}
+
+.feature:nth-child(2) .bullet{
+  background-color: rgba(235, 172, 135, 0.6);
+}
+
+.feature:last-child .bullet{
+  background-color: rgba(235, 172, 135, 1);
+}
+
+.feature-img{
+  background: #ebac87;
+  width: 310px;
+    height: 310px;
+    margin: 10px 0 20px;
+}
+
+.feature-img img{
+  width:100%;
+}
+
+strong{
+  font-weight: bold;
+}
+.check-in{
+  width: 600px;
+  margin-top: 75px;
+}
+
+.check-in.btn{
+  color: #ebac87;
+  background-color: #fff;
+}
+
+.check-in .caption{
+  text-align: left;
+  color: #fff;
+
+}
+
+.check-in .dscr{
+  margin: 50px 0;
+}
+
+.footer{
+  padding: 50px 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .socials {
+  display: flex;
+}
+
+.bullet.fb{
+  background: url("../img/fb.svg");
+}
+
+.bullet.inst{
+  background: url("../img/inst.svg");
+}
+
+.bullet.pinterest{
+  background: url("../img/pinterest.svg");
+}
+
+.bullet.inquiry{
+    position: fixed;
+    bottom: 50px;
+    right: 120px;
+    width: 80px;
+    height: 80px;
+    background-color: #ebac87;
+    color: #fff;
+    text-decoration: none;
+    font-size: 60px;
+    border:1px solid #fff;
+}
+
+.socials .bullet, .bullet.inquiry{
+      transition: all .3s;
+}
+.socials .bullet:hover,
+.bullet.inquiry:hover{
+      background-color: rgba(0,0,0,0.1);
+
+}
